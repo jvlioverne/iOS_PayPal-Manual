@@ -60,10 +60,8 @@
 		8BFA74991C430C1D009B8259 /* PayPal-Manual */ = {
 			isa = PBXGroup;
 			children = (
-				8BFA749D1C430C1D009B8259 /* AppDelegate.h */,
-				8BFA749E1C430C1D009B8259 /* AppDelegate.m */,
-				8BFA74A01C430C1D009B8259 /* ViewController.h */,
-				8BFA74A11C430C1D009B8259 /* ViewController.m */,
+				8BFA74B51C430DBF009B8259 /* Controllers */,
+				8BFA74B41C430DAE009B8259 /* Main */,
 				8BFA74A31C430C1D009B8259 /* Main.storyboard */,
 				8BFA74A91C430C1D009B8259 /* Assets.xcassets */,
 				8BFA74AB1C430C1D009B8259 /* LaunchScreen.storyboard */,
@@ -80,6 +78,24 @@
 				8BFA749B1C430C1D009B8259 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BFA74B41C430DAE009B8259 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8BFA749D1C430C1D009B8259 /* AppDelegate.h */,
+				8BFA749E1C430C1D009B8259 /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		8BFA74B51C430DBF009B8259 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BFA74A01C430C1D009B8259 /* ViewController.h */,
+				8BFA74A11C430C1D009B8259 /* ViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +129,7 @@
 				TargetAttributes = {
 					8BFA74961C430C1D009B8259 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = QXF33N93KH;
 					};
 				};
 			};
@@ -267,10 +284,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "PayPal-Manual/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Benjas.PayPal-Manual";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -278,10 +298,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "PayPal-Manual/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Benjas.PayPal-Manual";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
